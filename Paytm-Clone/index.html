@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paytm: Secure & Fast UPI Payments</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/paytmlogo-title.png" type="image/icon type">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <div class="nav-bar-logo" style="cursor:pointer;">
+        <img src="images/logo.png" alt="" width="180px">
+    </div>
+
+    
+    <div class="nav-bar-between">
+        <div class="dropdown">
+        <a href="" style="padding-right: 25px;font-size: 18px;" class="dropbtn">Paytm for Consumer</a>
+        <div class="dropdown-content">
+            <a href="#">Payments</a>
+            <a href="#">Ticket Booking</a>
+            <a href="#">Financial services</a>
+          </div>
+          </div>
+          <div class="dropdown">
+        <a href=""style="padding-right: 25px;">Paytm for Business</a>
+        <div class="dropdown-content">
+            <a href="#">Consumer Payments</a>
+            <a href="#">Business Payments</a>
+            <a href="#">Business Software</a>
+            <a href="#">Financial service</a>
+            <a href="#">Developer</a>
+         </div>   
+        </div>
+        <a href=""style="padding-right: 25px;">Investor Relations</a>
+        <div class="dropdown">
+        <a href=""style="padding-right: 25px;">Company</a>
+        <div class="dropdown-content">
+            <a href="#">About</a>
+            <a href="#">CSR</a>
+            <a href="#">Blog</a>
+            <a href="#">Contact us</a>
+            <a href="#">Sustainability</a>
+        </div>
+       </div>
+        <a href="" style="padding-right: 25px;">Career</a>
+    </div>
+
+    <div class="float-right" style="padding-top:60px;padding-right: 45px;">
+        <button type="submit" id="signin">Sign In<img src="images/signin.svg" alt="" width="34px" height="34px" id="signimg"> </button>
+    </div>
+
+<div class="learnmore">
+    <b>No Wallet KYC Required</b>😊 to pay using UPI on Paytm. <a href="#"> Learn more.</a>
+</div>
+
+<div class="download-paytm">
+<img src="images/down-paytm-1.png" alt="" width="80px">
+<h1 style="font-size: 54px; font-weight: 700; font-family: Inter, sans-serif;margin-top: 20px;">India's Most-loved <br> Payments App</h1>
+<p style="font-size: 20px; font-family: sans-serif;">
+Recharge & pay bills, book flights & movie tickets,<br> open a savings account, invest in stocks & mutual <br> funds, and do a lot more.
+</p>
+<div class="down-banner-right">
+    <img src="images/down-banner.webp" alt="" width="528px">
+</div>
+<button id="down-paytm-btn"> Download Paytm App <img src="images/apple.svg" alt="" width="15px"> <img src="images/google-play.svg" alt="" width="15px"></button>
+</div>
+
+
+<div class="recharge-pay">
+
+<h1 style="font-size: 36px;font-weight:600;color: white;font-family: Inter,sans-serif;">Recharge & Pay Bills on Paytm.</h1>
+<br>
+<div style="display: flex;">
+<div>
+    <button id="recharge-pay">
+<img src="images/recharge.png" alt="" style="border-radius: 20px; width: 64px;height: 64px;"><br>
+<p style="text-align: left;padding-left: 25px;font-size: 15px;font-family: sans-serif;">
+Recharge<br>
+<b> Prepaid<br>
+Mobile ></b><br>
+</p>
+</div>
+
+<div>
+    <button id="recharge-pay">
+<img src="images/elect.png" alt="" style="border-radius: 20px; width: 64px;height: 64px;">
+<p style="text-align: left;padding-left: 25px;">
+Pay<br>
+<b> Electricity<br>
+Bill ></b>
+</p>
+</div>
+
+<div>
+    <button id="recharge-pay">
+<img src="images/rech-dth.png" alt="" style="border-radius: 20px; width: 64px;height: 64px;">
+<p style="text-align: left;padding-left:20px;font-size: 15px;font-family: sans-serif;">
+Recharge<br>
+<b> DTH<br>
+Connection ></b>
+</p>
+</div>
+
+<div>
+    <button id="recharge-pay">
+<img src="images/book-gas.png" alt="" style="border-radius: 20px; width: 64px;height: 64px;">
+<p style="text-align: left;padding-left:20px;font-size: 15px;font-family: sans-serif;">
+Book<br>
+<b> Gas<br>
+Cylinder ></b>
+</p>
+</div>
+
+<div>
+    <button id="recharge-pay">
+<img src="images/pay-broad.png" alt="" style="border-radius: 20px; width: 64px;height: 64px;">
+<p style="text-align: left;padding-left:20px;font-size: 15px;font-family: sans-serif;">
+Pay<br>
+<b> Broadband &<br>
+Landline Bill ></b>
+</p>
+</div>
+
+<div>
+    <button id="recharge-pay">
+<img src="images/pay-edu.png" alt="" style="border-radius: 20px; width: 64px;height: 64px;">
+<p style="text-align: left;padding-left:20px;font-size: 15px;font-family: sans-serif;">
+Pay<br>
+<b> Education<br>
+Fee ></b>
+</p>
+</div>
+
+<div>
+    <button id="recharge-pay">
+<img src="images/all-pay-serv.png" alt="" style="border-radius: 20px; width: 64px;height: 64px;">
+<p style="text-align: left;padding-left:20px;font-size: 15px;font-family: sans-serif;">
+All<br>
+<b>Payment<br>
+Services ></b> 
+</p>
+</div>
+</div>
+</button>
+</div>
+
+
+
+
+
+
+
+<div class="book-buy">
+    <h1 style="font-size: 36px;font-weight:600;color: white;font-family: Inter,sans-serif;padding-bottom: 40px;">Book & Buy on Paytm.</h1>
+
+
+
+    <div style="display: flex;">
+        <div>
+            <button id="book-buy">
+        <img src="images/movie-ticket.png" alt="" style="border-radius: 20px; width: 64px;height: 64px;"><br>
+        <p style="text-align: left;padding-left: 25px;font-size: 20px;font-family: sans-serif;">
+        <b>Movie<br>
+        Tickets &nbsp; ></b><br>
+        </p>
+        </div>
+        
+        <div>
+            <button id="book-buy">
+        <img src="images/flight-ticket.png" alt="" style="border-radius: 20px; width: 64px;height: 64px;"><br>
+        <p style="text-align: left;padding-left: 25px;font-size: 20px;font-family: sans-serif;">
+        <b>Flight<br>
+        Tickets &nbsp; ></b><br>
+        </p>
+        </div>
+        
+        <div>
+            <button id="book-buy">
+        <img src="images/bus-ticket.png" alt="" style="border-radius: 20px; width: 64px;height: 64px;"><br>
+        <p style="text-align: left;padding-left: 25px;font-size: 20px;font-family: sans-serif;">
+        <b>Bus<br>
+        Tickets &nbsp; ></b><br>
+        </p>
+        </div>
+        
+        <div>
+            <button id="book-buy">
+        <img src="images/train-ticket.png" alt="" style="border-radius: 20px; width: 64px;height: 64px;"><br>
+        <p style="text-align: left;padding-left: 25px;font-size: 20px;font-family: sans-serif;">
+        <b>Train<br>
+        Tickets &nbsp; ></b><br>
+        </p>
+        </div>
+        
+        <div>
+            <button id="book-buy">
+        <img src="images/insurance.png" alt="" style="border-radius: 20px; width: 64px;height: 64px;"><br>
+        <p style="text-align: left;padding-left: 15px;font-size: 20px;font-family: sans-serif;">
+        <b>Buy<br>
+        Insurance ></b><br>
+        </p>
+        </div>
+        
+        <div>
+            <button id="book-buy">
+        <img src="images/int-flight.png" alt="" style="border-radius: 20px; width: 64px;height: 64px;"><br>
+        <p style="text-align: left;padding-left: 15px;font-size: 20px;font-family: sans-serif;">
+        <b>International<br>
+        Flights &nbsp; ></b><br>
+        </p>
+        </div>
+        
+        <div>
+            <button id="book-buy">
+        <img src="images/stocks.webp" alt="" style="border-radius: 20px; width: 64px;height: 64px;"><br>
+        <p style="text-align: left;padding-left: 15px;font-size: 20px;font-family: sans-serif;">
+        <b>Invest<br>
+        in Stocks ></b><br>
+        </p>
+        </div>
+
+        </div>
+        </button>
+
+</div>
+
+
+<div class="payment-instru">
+   <p style="width: 1170px;margin: 0 auto 35px;font-size: 48px;color: #000;font-weight: 700;line-height: 50px;font-family:Inter, sans-serif;padding-left: 20px;">Paytm Payment Instruments</p>
+   
+   <div class="container">
+
+    <div style="display:flex;">
+    <img src="images/paytm-wallet.png" alt="" width="auto" height="77px" style="margin-right: 10px;">
+    <p style="font-size: 16px;padding-top: 10px;font-weight: 700;">
+    Paytm <br>
+    Wallet</p>
+    
+   </div>
+   <div class="float-right align-content-center">
+    <img src="images/paytm-wallet-2.webp" alt="" width="539px" height="460px">
+   </div>
+   <div style="margin: 48px 0px 0px;color: black;">
+    <span style="font-size: 36px;font-family: Inter, sans-serif;font-weight: 700;">The Fastest Way to <br> Pay In-store & Online.</span> <br>
+    <span style="font-size: 17px;font-family: Inter, sans-serif;padding: 24px 0 30px;display: block;font-size: 17px;font-weight: 500;line-height: 26px"> Load up your Paytm Wallet for free and make payments <br> in a jiffy at over 21 million stores, websites and apps.</span>
+   </div>
+   <button id="down-paytm-btn"> Download Paytm App <img src="images/apple.svg" alt="" width="15px"> <img src="images/google-play.svg" alt="" width="15px"></button>
+   
+   </div>
+   
+</div>
+
+<div class="upi-transfer">
+    <div class="container">
+
+        <div style="display:flex;">
+        <img src="images/upi-money-transfer.png" alt="" width="auto" height="77px" style="margin-right: 10px;">
+        <p style="font-size: 16px;padding-top: 10px;font-weight: 700;">
+        UPI Money<br>
+        Transfer</p>
+        
+       </div>
+       <div class="float-right align-content-center">
+        <img src="images/upi-money-transfer2.webp" alt="" width="539px" height="460px" style="margin: auto;">
+       </div>
+       <div style="margin: 48px 0px 0px;color: black;">
+        <span style="font-size: 36px;font-family: Inter, sans-serif;font-weight: 700;">Pay anyone directly<br>from your bank <br>account.</span> <br>
+        <span style="font-size: 17px;font-family: Inter, sans-serif;padding: 24px 0 30px;display: block;font-size: 17px;font-weight: 500;line-height: 26px"> Pay anyone, everywhere. Make contactless & secure <br> payments in-stores or online using Paytm Wallet or <br> Directly from your Bank Account. Plus, send & receive <br> money from anyone.</span>
+       </div>
+       <button id="down-paytm-btn"> Download Paytm App <img src="images/apple.svg" alt="" width="15px"> <img src="images/google-play.svg" alt="" width="15px"></button>
+       
+       </div>
+
+</div>
+
+
+<div class="paytm-postpaid">
+    <div class="container">
+
+        <div style="display:flex;">
+        <img src="images/paytm-postpaid.webp" alt="" width="auto" height="77px" style="margin-right: 10px;">
+        
+        
+       </div>
+       <div class="float-right align-content-center">
+        <img src="images/paytm-postpaid2.webp" alt="" width="539px" height="460px" style="margin: auto;padding-bottom: 30px;">
+       </div>
+       <div style="margin: 48px 0px 0px;color: black;">
+        <span style="font-size: 36px;font-family: Inter, sans-serif;font-weight: 700;">Want it? <br> No more waiting for it.</span> <br>
+        <span style="font-size: 17px;font-family: Inter, sans-serif;padding: 24px 0 30px;display: block;font-size: 17px;font-weight: 500;line-height: 26px"> With Paytm Postpaid, your wishlist doesn't have to be <br> on the waitlist. Shop for the things you want today and <br> pay for them next month.</span>
+       </div>
+       <button id="learn-more-btn">Learn More &nbsp; -></button>
+       
+       </div>
+</div>
+
+
+
+<div class="flex-container" style="padding-left: 180px;">
+
+  <div class="flex-child magenta">
+    <img src="images/paytm-hdfc.png" alt="" width="auto" height="100px" style="padding-bottom: 30px;"><br>
+    <span style="font-size: 40px;font-weight: 700;line-height: 48px;font-family: Inter, sans-serif;">
+    Unlimited Cashback <br>
+    Every time
+   </span>
+   <p style="font-size: 20px;font-weight: 500;line-height: 30px;font-family: Inter, sans-serif ;padding-top: 30px;">
+    Paytm HDFC Bank Select Credit Card. A card with assured Cashback and incredible offers.
+   </p>
+   <img src="images/paytm-hdfc1.webp" alt="" height="296px" style="margin-top:40px;">
+  </div>
+  
+  <div class="flex-child green">
+    <img src="images/paytm-sbi.png" alt="" width="auto" height="20px" style="margin-top: 45px;"><br>
+    <br>
+    <span style="font-size: 40px;font-weight: 700;line-height: 48px;font-family: Inter, sans-serif;padding-bottom:20px;padding-top:20px;">
+        India’s Most <br>
+Sincere Credit Card
+       </span>
+       <p style="font-size: 20px;font-weight: 500;line-height: 30px;font-family: Inter, sans-serif ;padding-top: 30px;">
+        Paytm SBI Card SELECT - With Intelligent Features & Great Rewards that Never Expire
+       </p>
+   <img src="images/paytm-sbi1.webp" alt="" height="296px" style="margin-top:40px;">
+
+  </div>
+  
+</div>
+
+<div class="container-finan-serv">
+  <img src="images/paytm-finan-serv1.webp" alt="" style="float:right;width:452px;">
+  <span style="width: 1170px;margin: 0 auto 35px;font-size: 48px;color: #000;font-weight: 700;line-height: 50px;font-family: Inter, sans-serif ;">Financial Services by Paytm</span>
+  <br>
+  <img src="images/paytm-finan-serv.png" alt="" width="212px" style="padding-top:70px;padding-bottom:60px;" >
+  <br>
+  <span style="margin-top: 48px;font-size: 40px;font-weight: 700;line-height: 50px;font-family: Inter, sans-serif;padding-bottom:40px;">India's most sincere bank.</span>
+  <p style="padding-top: 12px;display: block;width: 515px; margin-bottom: 45px;font-size: 20px;font-weight: 500;line-height: 26px;font-family: Inter, sans-serif ;">Paytm Payments Bank offers secure, transparent and <br> risk-free banking at your fingertips. With instant <br> account opening, virtual debit card and zero balance <br> requirements, experience the future of banking today</p>
+  <button id="learn-more-btn" style="margin-top: 60px;">Learn More &nbsp; -></button>
+  
+</div>
+
+
+<div class="container-paytm-money">
+    <img src="images/paytm-finan-serv1.webp" alt="" style="float:left;width:452px;">
+    <div style="float:right">
+    
+    <img src="paytm-money.webp" alt="" width="212px" style="padding-top:0px;padding-bottom:60px;" >
+    <br>
+    <span style="margin-top: 48px;font-size: 40px;font-weight: 700;line-height: 50px;font-family: Inter, sans-serif;padding-bottom:40px;">Build Long-term <br> Wealth & Achieve <br> your Goals.</span>
+    <p style="padding-top: 12px;display: block;width: 515px; margin-bottom: 45px;font-size: 20px;font-weight: 500;line-height: 26px;font-family: Inter, sans-serif ;">Investing on Paytm Money is transparent, low-cost and <br> commission-free. Buy stocks & mutual funds that <br> can help you create wealth & realise your dreams.</p>
+    <button id="learn-more-btn" style="margin-top: 60px;">Learn More &nbsp; -></button>
+   </div>
+  </div>
+
+<div class="container-insur-book">
+    <img src="images/paytm-insur-book1.webp" alt="" style="float:right;width:452px;">
+  <img src="images/paytm-insur-book.webp" alt="" width="212px" style="padding-top:70px;padding-bottom:60px;" >
+  <br>
+  <span style="margin-top: 48px;font-size: 40px;font-weight: 700;line-height: 50px;font-family: Inter, sans-serif;padding-bottom:40px;">Insurance made easy.</span>
+  <p style="padding-top: 12px;display: block;width: 515px; margin-bottom: 45px;font-size: 20px;font-weight: 500;line-height: 26px;font-family: Inter, sans-serif ;">Buying insurance does not have to be tedious, time- <br> consuming & confusing. Paytm Insurance removes the <br> worry of getting insured by making it simple, <br> convenient & easy-to-understand.</p>
+  <button id="learn-more-btn" style="margin-top: 60px;">Learn More &nbsp; -></button>
+
+</div>
+
+
+<div class="container-personal-loan">
+    <img src="images/paytm-pers-loan.webp" alt="" style="float:left;width:452px;">
+    <div style="float:right">
+    
+    <img src="images/paytm-pers-loan1.png" alt="" width="212px" style="padding-top:0px;padding-bottom:60px;" >
+    <br>
+    <span style="margin-top: 48px;font-size: 40px;font-weight: 700;line-height: 50px;font-family: Inter, sans-serif;padding-bottom:40px;">Get a Personal Loan in <br> 2 Minutes.</span>
+    <p style="padding-top: 12px;display: block;width: 515px; margin-bottom: 45px;font-size: 20px;font-weight: 500;line-height: 26px;font-family: Inter, sans-serif ;">Paytm offers India's quickest multi-purpose, hassle-free loan. It is 100% digital, transparent and paperless.</p>
+    <button id="learn-more-btn" style="margin-top: 60px;">Learn More &nbsp; -></button>
+</div>
+</div>
+
+
+
+<div class="paytm-business-serv">
+    <p style="width: 1170px;margin: 0 auto 35px;font-size: 48px;color: #000;font-weight: 700;line-height: 50px;font-family:Inter, sans-serif;padding-left: 20px;">Business Services by Paytm</p>
+    
+    <div class="container-paytm-bus">
+ 
+    <div class="float-right align-content-center">
+     <img src="images/paytm-bus-online.webp" alt="" width="539px" height="460px">
+    </div>
+    <div style="margin-top:100px;color: black;">
+     <span style="font-size: 36px;font-family: Inter, sans-serif;font-weight: 700;">Accept payments <br> online with ease</span> <br>
+     <span style="font-size: 17px;font-family: Inter, sans-serif;padding: 24px 0 30px;display: block;font-size: 17px;font-weight: 500;line-height: 26px">Grow your business with the payment gateway that <br> powers India’s largest brands and even the Paytm App</span>
+    </div>
+    <button id="learn-more-btn" style="margin-top: 30px;">Learn More &nbsp; -></button>
+    
+    </div>
+    
+ </div>
+
+
+ <div class="paytm-in-shop">
+    
+    
+    <div class="container-paytm-bus">
+ 
+    <div class="float-right align-content-center">
+     <img src="images/paytm-in-shop.webp" alt="" width="539px" height="460px">
+    </div>
+    <div style="margin-top:100px;color: black;">
+     <span style="font-size: 36px;font-family: Inter, sans-serif;font-weight: 700;">In-shop payments <br> powered by Paytm.</span> <br>
+     <span style="font-size: 17px;font-family: Inter, sans-serif;padding: 24px 0 30px;display: block;font-size: 17px;font-weight: 500;line-height: 26px">Millions of small & big businesses use Paytm to accept <br>payments anywhere any time with a wide range of <br>solutions for all kind of merchants </span>
+    </div>
+    <button id="learn-more-btn" style="margin-top: 30px;">Learn More &nbsp; -></button>
+    
+    </div>
+    
+ </div>
+
+
+ <div class="paytm-footer" style="display: flex; ">
+    
+    <div style="padding-top: 80px;">
+    <span style="width: 230px;font-size: 20px;color: #000;font-weight: 600;font-family: Inter, sans-serif;">
+        Download Paytm App to <br> Pay from anywhere
+    </span>
+    
+   </div>
+   <div style="padding-top: 80px;padding-left: 35px; cursor: pointer;">
+   <img src="images/downloadAppstore.svg" alt="" width="160px" height="53px">
+   <img src="images/downloadGoogleplay.svg" alt="" width="179px" height="53px">
+   </div>
+    <div style="padding-top: 90px;padding-left:450px;cursor: pointer;">
+    <img src="images/twitter-icon.svg" alt="" width="25px" style="margin-right: 20px;">
+    <img src="images/instagram-icon.svg" alt="" width="25px" style="margin-right: 20px;">
+    <img src="images/facebook-icon.svg" alt="" width="12px">
+   </div>
+</div>
+  <div style="height: 15px;width: 1519px;background-color:#00baf2;"></div>
+  <div style="height: 15px;width: 1519px;background-color:#0f4a8a;"></div>
+</body>
+</html>
